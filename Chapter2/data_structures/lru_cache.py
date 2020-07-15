@@ -1,4 +1,4 @@
-class LRUCache(object):
+class LRUCache():
 
   def __init__(self, capacity):
       """
@@ -49,14 +49,14 @@ class LRUCache(object):
         self.hash_table[key] = new_node
         self.doubly_linkedlist.insert_head(new_node)
       
-class Node(object):
+class Node():
   def __init__(self, key, value):
     self.key = key
     self.value = value
     self.next = None
     self.previous = None
       
-class DoublyLinkedList(object):
+class DoublyLinkedList():
   def __init__(self):
     self.head = None
     self.tail = None

@@ -2,7 +2,7 @@ def heap_sort(arr):
   array_length = len(arr)
 
   # Build max heap from the array
-  for i in range(array_length / 2 - 1, -1, -1):
+  for i in range(array_length // 2 - 1, -1, -1):
     heapify(arr, array_length, i)
 
   # Extract element from the heap
